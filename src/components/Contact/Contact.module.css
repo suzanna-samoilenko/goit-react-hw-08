@@ -1,29 +1,13 @@
-.deleteBtn {
-  display: inline-block;
-  padding: 5px 20px;
-  background-color: #0f2f52;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.deleteBtn:hover {
-  background-color: #184c85;
-  transition: 0.7s;
-}
-
 .contact {
-  border: 1px solid #0f2f52;
-  border-radius: 8px;
+  border-radius: 16px;
   padding: 10px 20px;
   background-color: #ffffff;
   max-width: 350px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 30px;
 }
 
 .contactInfo {
@@ -39,4 +23,20 @@
   color: #0f2f52;
   font-size: 16px;
   margin-right: 5px;
+}
+
+.deleteBtn {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #0f2f52;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deleteBtn:hover {
+  background-color: #184c85;
+  transition: 0.7s;
 }

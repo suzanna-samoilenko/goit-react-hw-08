@@ -1,12 +1,11 @@
 .form {
-  border: 1px solid #0f2f52;
-  border-radius: 8px;
-  padding: 20px;
   background-color: #ffffff;
-  max-width: 350px;
-  max-height: 280px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  width: 90%;
+  margin: 0 20px 30px;
   text-align: center;
 }
 
@@ -29,7 +28,7 @@
 .inputForm {
   outline: none;
   width: 100%;
-  padding: 10px;
+  padding: 6px 10px;
   border: 1px solid #0f2f52;
   border-radius: 4px;
   color: #0f2f52;

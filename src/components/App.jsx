@@ -1,9 +1,9 @@
-import Layout from "./Layout/Layout";
-import HomePage from "../pages/HomePage";
-import ContactsPage from "../pages/ContactsPage";
-import RegistrationPage from "../pages/RegistrationPage";
-import LoginPage from "../pages/LoginPage";
-import NotFound from "../pages/NotFound";
+import Layout from "./Layout";
+import HomePage from "../pages/HomePage/HomePage";
+import ContactsPage from "../pages/ContactsPage/ContactsPage";
+import RegistrationPage from "../pages/RegistrationPage/RegistrationPage";
+import LoginPage from "../pages/LoginPage/LoginPage";
+import NotFound from "../pages/NotFound/NotFound";
 import { Route, Routes } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";

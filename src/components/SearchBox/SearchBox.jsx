@@ -12,15 +12,17 @@ const SearchBox = () => {
   };
 
   return (
-    <label className={styles.searchBox}>
-      Find contacts by name
-      <input
-        type="text"
-        value={filter}
-        onChange={handleChange}
-        className={styles.inputSearchBox}
-      />
-    </label>
+    <div className={styles.searchBox}>
+      <label className={styles.searchBoxLabel}>
+        Find contacts by name
+        <input
+          type="text"
+          value={filter}
+          onChange={handleChange}
+          className={styles.inputSearchBox}
+        />
+      </label>
+    </div>
   );
 };
 
