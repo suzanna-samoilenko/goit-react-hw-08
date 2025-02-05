@@ -14,7 +14,7 @@ const RegistrationForm = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const handleSubmit = (values, options) => {
-    console.log(values);
+    console.log("Form submitted with values: ", values);
     dispatch(registerThunk(values))
       .unwrap()
       .then(() => navigate("/"));
@@ -34,10 +34,6 @@ const RegistrationForm = () => {
     password: Yup.string()
       .min(6, "Password must be at least 6 characters long")
       .required("Password is required"),
-
-    confirmPassword: Yup.string()
-      .oneOf([Yup.ref("password"), null], "Passwords must match")
-      .required("Confirm password is required"),
   });
 
   return (

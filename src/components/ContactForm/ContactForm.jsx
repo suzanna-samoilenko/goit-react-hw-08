@@ -3,10 +3,11 @@ import styles from "./ContactForm.module.css";
 import * as Yup from "yup";
 import { useDispatch, useSelector } from "react-redux";
 import { addContact } from "/src/redux/contacts/operations.js";
+import { selectItems } from "../../redux/auth/selectors";
 
 const ContactForm = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector((state) => state.contacts.items);
+  const contacts = useSelector(selectItems);
 
   const handleSubmit = (values, { resetForm }) => {
     const isDuplicate = contacts.some(
