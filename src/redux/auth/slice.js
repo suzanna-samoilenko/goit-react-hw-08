@@ -40,10 +40,10 @@ const slice = createSlice({
         state.isLoggedIn = true;
         state.isRefreshing = false;
       })
-      .addCase(refreshUserThunk.pending, (state, action) => {
+      .addCase(refreshUserThunk.pending, (state) => {
         state.isRefreshing = true;
       })
-      .addCase(refreshUserThunk.rejected, (state, action) => {
+      .addCase(refreshUserThunk.rejected, (state) => {
         state.isRefreshing = false;
       });
   },
