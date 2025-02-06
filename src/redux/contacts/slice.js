@@ -33,7 +33,7 @@ const slice = createSlice({
           (contact) => contact.id !== action.payload.id
         );
       })
-      .addCase(logoutThunk, (state) => {
+      .addCase(logoutThunk.fulfilled, (state) => {
         state.items = [];
       });
   },
